@@ -2,11 +2,49 @@
 <head>
 <style>
 /* Write your code here */
+body{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.left_part{
+	display: flex;
+	flex-direction: column;
+	background-color: darkred;
+	height: 100%;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+
+}
+.left_part h1{
+	font-weight: bold;
+	font-family: Helvetica;
+	color: white;
+	font-size: 32;
+}
+.left_part h2{
+	font-weight: bold;
+	font-family: Times New Roman;
+	color: white;
+	font-size: 24;
+}
+.right_part{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 50%;
+}
+.right_part h3{
+	align-self: center;
+}
 </style>
 </head>
 <body>
 <aside class="left_part">
   <h1>Web Technologies</h1>
+  <h2>Foundations of Web</h2>
 </aside>
 <section class="right_part">
   <h3>Syllabus</h3>
