@@ -9,22 +9,35 @@ body{
   background-image: url("http://backgroundlabs.com/wp-content/uploads/2013/04/subtle-mosaic-pattern.png");
 
 }
-nav{
-  display: flex;
-  justify-content: space-between;
-}
+
 header{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 
 }
-
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav a{
+  flex-grow: 1;
+  text-decoration: none;
+  background-color: lightgray;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.active{
+  background-color: red;
+  color: white;
+}
 .logo_part{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 footer{
   display: flex;
@@ -38,8 +51,9 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
-  width: 60%;
+  width: 40%;
   height: 100vh;
 }
 .cards{
@@ -50,7 +64,31 @@ footer{
 .main_section{
   flex-grow: 1;
 }
-
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: solid red 2px;border-radius: 10px;
+}
+.title{
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 10px;border-top-right-radius: 10px;
+  text-decoration: none;
+}
+.price{
+  text-align: center;
+  font-size: 24;
+  font-weight: bold;
+}
+.search{
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+  margin-left: 90px;
+  
+}
 </style>
 </head>
 <body>
